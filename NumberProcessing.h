@@ -28,4 +28,4 @@ typedef CGAL::Nef_polyhedron_3<Kernel_nef>  Nef_polyhedron_t;
 typedef Kernel_nef::Plane_3  Plane_3;
 typedef CGAL::Polyhedron_3<Kernel_nef>  Polyhedron_t;
 
-Nef_polyhedron_t createPolyhedron();
+Nef_polyhedron_t make_voronoi_cell();

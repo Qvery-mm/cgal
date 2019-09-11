@@ -1,25 +1,17 @@
 #include "DrawMesh.h"
 #include "ConvertToSurfaceMesh.h"
 #include "ConstructPolyhedron.h"
+#include "make_voronoi.h"
 #include <string>
-
+#include "NumberProcessing.h"
 
 
 int main()
 {
   Nef_polyhedron poly;
-  poly = createPolyhedron();
+  poly = make_voronoi_cell();
   
-  // //std::string s;
-  // Nef_polyhedron_t gg1;
-  //Nef_polyhedron poly;
-  // std::ifstream in("temp.nef3");
-  // in >> gg1;
-  // in.close();
   
-  // std::ifstream in("temp.nef3");
-  // in >> gg;
-  // std::cout << s;
-  drawMesh(convertToSurfaceMesh(poly));
+  //drawMesh(convertToSurfaceMesh(poly));
   return 0;
 }

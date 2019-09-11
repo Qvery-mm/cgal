@@ -20,13 +20,14 @@ typedef CGAL::Surface_mesh<Point> Mesh;
 
 int drawMesh(Mesh m)
 {
-  // Mesh m;
+  Mesh i;
   // Mesh::Vertex_index u = m.add_vertex(Point(0,10,0));
   // Mesh::Vertex_index v = m.add_vertex(Point(0,0,0));
   // Mesh::Vertex_index w = m.add_vertex(Point(10,0,0));
   // m.add_face(u, v, w);
-  //CGAL::make_icosahedron<Mesh, Point>(m);
-
+ 
+  
   CGAL::draw(m);
+
   return 0;
 }

@@ -97,10 +97,10 @@ Surface_mesh convertToSurfaceMesh(Nef_polyhedron poly)
   Surface_mesh output;
   // std::cout << "Mesh created" << std::endl;
   CGAL::convert_nef_polyhedron_to_polygon_mesh(poly, output);
-  // std::cout << "Nef converted" << std::endl;
-  // std::ofstream out;
-  // out.open("out.off");
-  // out << output;
-  // out.close();
+  std::cout << "Nef converted" << std::endl;
+  std::ofstream out;
+  out.open("out.off");
+  out << output;
+  out.close();
   return output;
 }
